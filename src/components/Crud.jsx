@@ -19,7 +19,7 @@ const Crud = () => {
       setEditId(0);
       return;
     }
-    if (name != "" && email != "") {
+    if (name !== "" && email !== "") {
       setData([...data, { id: data.length + 1, name, email }]);
       setName("");
       setEmail("");
