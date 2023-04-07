@@ -26,7 +26,7 @@ const Crud = () => {
     }
   };
   const handleDelete = (id) => {
-    const newData = data.filter((i) => i.id != id);
+    const newData = data.filter((i) => i.id !== id);
     setData(newData);
     console.log(id);
   };
